@@ -15,6 +15,7 @@ def viewResults():
     results = pd.read_csv("results.csv", delim_whitespace=True)
     print(results.sort_values('result')) #выводим результаты с сортировкой от худших к лучшим
 
+calculateCorrectRate()
 viewResults()
 
 
